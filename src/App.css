@@ -8,3 +8,10 @@
   justify-content: center;
   gap: 40px;
 }
+.border-light {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.font-light {
+  color: var(--lightened-dark);
+}

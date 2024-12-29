@@ -1,6 +1,7 @@
 .flex-header {
   display: flex;
-  padding: 14px 80px;
+  padding: 14px 0px;
+  padding-right: 60px;
   /* height: 40px; */
   /* gap: 20px; */
   align-items: center;

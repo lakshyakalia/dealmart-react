@@ -9,3 +9,10 @@
   text-transform: uppercase;
   /* letter-spacing: 0px; */
 }
+
+.font-logo {
+  font-family: var(--font-logo);
+}
+.flex-logo img {
+  width: 290px;
+}

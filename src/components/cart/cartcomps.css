@@ -1,0 +1,127 @@
+.coupon-container,
+.cart-item-container,
+.cart-price-container,
+.btn-container {
+  padding: 20px;
+}
+.btn-container {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.cart-price-container {
+  margin-top: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: linear-gradient(to bottom, #fff 88%, #deffd3 100%);
+  background: linear-gradient(1turn, #deffd3 -35.71%, #fff 117.86%);
+}
+.coupon-header,
+.price-header {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.flex-coupon,
+.flex-discount,
+.flex-cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+.space-btw {
+  justify-content: space-between;
+}
+.bold {
+  font-weight: 600;
+  font-size: 14px;
+}
+.light {
+  color: var(--lightened-dark);
+  font-size: 14px;
+}
+.discount-banner {
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 16.8px;
+  background: #f7ffe6;
+  color: #006b22;
+  border: 0.5px solid #9bbfa6;
+  padding: 8px 16px;
+  /* width: 100%; */
+  border-radius: 8px;
+}
+img {
+  width: 40px;
+}
+.discount-icon > img {
+  width: 22px;
+}
+.remove-btn {
+  padding: 8px 12px;
+  background-color: var(--primary);
+  color: var(--light);
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  font-size: 14px;
+}
+.proceed-btn {
+  padding: 8px 12px;
+  background-color: var(--primary);
+  color: var(--light);
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 8px;
+}
+.cart-item-content > div {
+  margin-bottom: 20px;
+}
+.size-14 {
+  font-size: 14px;
+}
+.cart-item-container {
+  margin-top: 20px;
+}
+.item-title {
+  font-weight: 600;
+}
+.cart-item-img > img {
+  width: 150px;
+}
+.flex-cart-item {
+  gap: 40px;
+}
+.cart-item-content {
+  width: -webkit-fill-available;
+}
+.item-price {
+  text-align: right;
+  font-size: 16px;
+  color: var(--primary);
+  font-weight: 600;
+}
+.flex-price {
+  display: flex;
+  justify-content: space-between;
+}
+.price-metric {
+  font-size: 14px;
+  color: var(--lightened-dark);
+  margin-bottom: 14px;
+}
+.font-bold-large {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+hr {
+  width: 100%;
+  border: 1px dashed #ddd;
+  margin-bottom: 10px;
+}
+.primary {
+  color: #006b22;
+}

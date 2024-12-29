@@ -1,6 +1,7 @@
 import Banner from "../../components/banner/Banner";
 import ProductSection from "../../components/product/ProductSection";
 import "./shop.css";
+import ProductSectionHeader from "../../components/product/ProductSectionHeader";
 
 var banner2 = {
   title: "Exclusive Offers For You",
@@ -9,14 +10,14 @@ var banner2 = {
   btnText: "Check Now",
 };
 
-var banner1 = {
+export var banner1 = {
   title: "New Arrivals Only",
   subtitle: "new collections for everyone",
   img: "https://static.vecteezy.com/system/resources/previews/044/846/982/non_2x/beautiful-emotional-woman-enjoying-shopping-on-isolated-transparent-background-free-png.png",
   btnText: "Latest Collection",
 };
 
-const productList1 = {
+export const productList1 = {
   count: 16,
   header: "New Collections",
   product: [
@@ -357,12 +358,14 @@ export default function Shop() {
         <Banner banner={banner1} />
       </div>
       <div>
+        <ProductSectionHeader header={productList2.header} />
         <ProductSection productList={productList2} />
       </div>
       <div>
         <Banner banner={banner2} />
       </div>
       <div>
+        <ProductSectionHeader header={productList1.header} />
         <ProductSection productList={productList1} />
       </div>
     </div>
