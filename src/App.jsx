@@ -7,6 +7,7 @@ import Banner from "./components/banner/Banner";
 import Shop from "./screens/shop/Shop";
 import ProductDetail from "./screens/productDetail/ProductDetail";
 import Cart from "./screens/cart/Cart";
+import ShopCategory from "./screens/shopCategory/ShopCategory";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Header />
       {/* <Shop /> */}
       {/* <ProductDetail /> */}
-      <Cart />
+      {/* <Cart /> */}
+      <ShopCategory />
       <Footer />
     </div>
   );
