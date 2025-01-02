@@ -7,7 +7,7 @@ export default function ProductDescriptionContent(props) {
       <div className="flex-row">
         <div>{props.product.rating.rate} </div>
         <div>
-          <img src="./assets/images/star.png" alt="" />
+          <img src="/assets/images/star.png" alt="" />
         </div>
         <div>{" (" + props.product.rating.count + ")"}</div>
       </div>

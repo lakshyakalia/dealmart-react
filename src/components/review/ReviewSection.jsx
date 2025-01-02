@@ -7,7 +7,7 @@ export default function ReviewSection() {
       <div className="review-container">
         <div className="review-header">
           <div>
-            <img src="./assets/images/user.png" />
+            <img src="/assets/images/user.png" />
           </div>
           <div>Benoit l.</div>
         </div>

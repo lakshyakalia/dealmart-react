@@ -7,7 +7,7 @@ export default function CartCoupons() {
       <div className="flex-coupon space-btw">
         <div className="flex-coupon">
           <div className="discount-icon">
-            <img src="./assets/images/discount.png" />
+            <img src="/assets/images/discount.png" />
           </div>
           <div>
             <div className="bold">Apply Coupon/ Gift Card</div>

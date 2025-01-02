@@ -28,4 +28,10 @@
 
 .cart-img {
   align-content: center;
+  cursor: pointer;
+}
+.nav-links > div > a:active,
+.nav-links > div > a:visited,
+.nav-links > div > a {
+  color: var(--dark);
 }

@@ -8,16 +8,23 @@ import Shop from "./screens/shop/Shop";
 import ProductDetail from "./screens/productDetail/ProductDetail";
 import Cart from "./screens/cart/Cart";
 import ShopCategory from "./screens/shopCategory/ShopCategory";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <Shop /> */}
-      {/* <ProductDetail /> */}
-      {/* <Cart /> */}
-      <ShopCategory />
-      <Footer />
+      <BrowserRouter>
+        <ScrollToTop />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Shop />} />
+          <Route path="/category/:category" element={<ShopCategory />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

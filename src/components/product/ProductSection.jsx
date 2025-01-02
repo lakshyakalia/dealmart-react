@@ -8,6 +8,7 @@ export default function ProductSection({ productList }) {
         {productList.product.slice(0, productList.count).map((product) => (
           <ProductCard
             key={product.id}
+            id={product.id}
             title={product.title}
             price={product.price}
             description={product.description}

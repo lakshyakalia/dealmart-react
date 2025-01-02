@@ -357,16 +357,18 @@ export default function Shop() {
       <div className="shop-banner">
         <Banner banner={banner1} />
       </div>
-      <div>
-        <ProductSectionHeader header={productList2.header} />
-        <ProductSection productList={productList2} />
-      </div>
-      <div>
-        <Banner banner={banner2} />
-      </div>
-      <div>
-        <ProductSectionHeader header={productList1.header} />
-        <ProductSection productList={productList1} />
+      <div className="padding-left-right">
+        <div>
+          <ProductSectionHeader header={productList2.header} />
+          <ProductSection productList={productList2} />
+        </div>
+        <div>
+          <Banner banner={banner2} />
+        </div>
+        <div>
+          <ProductSectionHeader header={productList1.header} />
+          <ProductSection productList={productList1} />
+        </div>
       </div>
     </div>
   );
