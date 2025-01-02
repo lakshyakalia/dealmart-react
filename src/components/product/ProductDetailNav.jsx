@@ -1,9 +1,12 @@
+import { Link } from "react-router";
 import "./product.css";
 
-export default function ({ title }) {
+export default function ({ title, category }) {
   return (
     <div className="product-detail-nav-links">
-      <div>HOME &gt; SHOP &gt; {title}</div>
+      <div>
+        <Link to={"/"}>HOME</Link> &gt; {category} &gt; {title}
+      </div>
     </div>
   );
 }

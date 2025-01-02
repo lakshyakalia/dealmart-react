@@ -65,7 +65,10 @@
   /* margin-top: 80px; */
   margin-bottom: 80px;
 }
-.product-detail-nav-links {
+.product-detail-nav-links,
+.product-detail-nav-links a,
+.product-detail-nav-links a:visited,
+.product-detail-nav-links a:active {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 80px;
