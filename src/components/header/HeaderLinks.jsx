@@ -7,14 +7,20 @@ export default function HeaderLinks() {
         <Link to={"/"}>Shop</Link>
       </div>
       <div>
-        <Link to={"/category/men"}>Men</Link>
+        <Link to={"/category/clothes"}>Clothes</Link>
       </div>
       <div>
-        <Link to={"/category/women"}>Women</Link>
+        <Link to={"/category/electronics"}>Electronics</Link>
       </div>
       <div>
-        <Link to={"/category/kids"}>Kids</Link>
+        <Link to={"/category/shoes"}>Shoes</Link>
       </div>
+      <div>
+        <Link to={"/category/furniture"}>Furniture</Link>
+      </div>
+      {/* <div>
+        <Link to={"/category/miscellaneous"}>Miscellaneous</Link>
+      </div> */}
     </div>
   );
 }
