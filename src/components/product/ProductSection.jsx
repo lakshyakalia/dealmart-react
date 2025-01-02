@@ -5,13 +5,13 @@ export default function ProductSection({ productList }) {
   return (
     <div className="product-section-container">
       <div className="product-flex">
-        {productList.product.slice(0, productList.count).map((product) => (
+        {productList.slice(0, productList.length).map((product) => (
           <ProductCard
-            key={product.id}
-            id={product.id}
-            title={product.title}
+            key={product.productId}
+            id={product.productId}
+            title={product.productName}
             price={product.price}
-            description={product.description}
+            description={product.productDescription}
             image={product.image}
           />
         ))}
