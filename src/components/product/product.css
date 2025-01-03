@@ -41,8 +41,8 @@
 .product-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 72px;
   margin-left: 150px;
   margin-right: 150px;
 }

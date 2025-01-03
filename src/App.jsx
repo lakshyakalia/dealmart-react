@@ -10,21 +10,27 @@ import Cart from "./screens/cart/Cart";
 import ShopCategory from "./screens/shopCategory/ShopCategory";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router";
 import ScrollToTop from "./utils/ScrollToTop";
+import { CartProvider } from "./context/CartContext";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <ScrollToTop />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Shop />} />
-          <Route path="/category/:category" element={<ShopCategory />} />
-          <Route path="/product/:id" element={<ProductDetail />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <AuthProvider>
+        <CartProvider>
+          <BrowserRouter>
+            <ScrollToTop />
+            <Header />
+            <Routes>
+              <Route path="/" element={<Shop />} />
+              <Route path="/category/:category" element={<ShopCategory />} />
+              <Route path="/product/:id" element={<ProductDetail />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+            <Footer />
+          </BrowserRouter>
+        </CartProvider>
+      </AuthProvider>
     </div>
   );
 }

@@ -29,9 +29,24 @@
 .cart-img {
   align-content: center;
   cursor: pointer;
+  position: relative;
 }
 .nav-links > div > a:active,
 .nav-links > div > a:visited,
 .nav-links > div > a {
   color: var(--dark);
+}
+.cart-item {
+  background-color: var(--secondary);
+  border-radius: 50%;
+  padding: 2px;
+  color: var(--light);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  width: 20px;
+  font-size: 13px;
+  left: 20px;
+  top: 0;
 }
